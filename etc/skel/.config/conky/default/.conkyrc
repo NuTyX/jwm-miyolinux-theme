@@ -1,0 +1,73 @@
+-- Conky Name: default
+
+conky.config = {
+alignment="top_right",
+background="no",
+border_margin=5,
+border_width=5,
+default_color="ffffff",
+double_buffer=true,
+draw_borders=false,
+draw_graph_borders=false,
+draw_outline=false,
+draw_shades=false,
+gap_x=20,
+gap_y=10,
+minimum_width = 275, minimum_height = 600,
+maximum_width = 275,
+no_buffers=true,
+override_utf8_locale=true,
+own_window=true,
+own_window_title=conky,
+own_window_hints="undecorated,below,sticky,skip_taskbar,skip_pager",
+own_window_transparent=true,
+own_window_type="override",
+own_window_color= '000000',
+text_buffer_size="1000",
+total_run_times=0,
+update_interval=1,
+uppercase=false,
+short_units=true,
+use_xft=true,
+xftalpha=1,
+font="Ubuntu:pixelsize=13",
+}
+
+conky.text=[[
+${voffset 8}${font Ubuntu:pixelsize=45}${time %H:%M}${font}${voffset -29}${offset 5}${color #FE9C29}${font Ubuntu:pixelsize=25}${time %d}${voffset -3}${offset 4}${color}${font Ubuntu:pixelsize=14}${time %B %Y}${font}${voffset 18}${offset -3}${color #FE9C29}${font Ubuntu:pixelsize=22}${offset -88}${time %A}${color}${font}
+
+System$alignr${exec lsb_release -sd | sed 's/\"//g'}
+Init${alignr}${exec init --version}Kernel$alignr$kernel
+Session:${alignr}${exec 'echo $DESKTOP_SESSION'}
+Packages: $alignr${exec cards list -F | wc -l}
+Uptime$alignr$uptime
+Temperature${alignr}${acpitemp}C
+Processes${alignr}${execi 1000 ps aux | wc -l}
+Disk Space${alignr}${fs_used /} / ${fs_size /} $alignr ${fs_used_perc /}%
+
+CPU1 ${alignr}${cpu cpu1}%
+${color #D18B38}${cpubar 4}${color}
+#CPU2 ${alignr}${cpu cpu2}%
+#${color #D18B38}${cpubar 4}${color}
+
+RAM ${alignr}${exec free -h --si | awk 'NR==2{printf $3}'} / $memmax ($memperc%)
+${color #D18B38}${membar 4}${color}
+SWAP ${alignr}$swap / $swapmax ($swapperc%)
+${color #D18B38}${swapbar 4}${color}
+${voffset 5}${alignc}Basic Keyboard Shortcuts
+${voffset 10}Alt + Space ..............................................${alignr}JWM Menu
+Alt + b ...........................................${alignr}Browser (Firefox)
+Alt + c .................................................${alignr}Close Window
+Alt + f ....................................................${alignr}File Manager
+Alt + r .................................................${alignr}Run Command
+Alt + t .............................................................${alignr}Terminal
+Alt + Down ........................................${alignr}Show Desktop
+Alt + 1 - 2 .......................................${alignr}Switch Desktops
+PrtSc .........................................................${alignr}Screenshot
+
+Shift + Ctrl + l ...............................................${alignr}Log Out
+Shift + Ctrl + r ................................................${alignr}Reboot
+Shift + Ctrl + s ...........................................${alignr}Shutdown
+Shift + Ctrl + x .......................................${alignr}Screen Lock
+]]
+

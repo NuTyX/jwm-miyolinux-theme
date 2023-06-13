@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+cp ~/.config/jwm/Deepin-Dark/.jwmrc ~/.jwmrc;cp ~/.config/jwm/Deepin-Dark/settings.ini ~/.config/gtk-3.0/settings.ini;jwm -restart;bash -c 'sleep 4';nitrogen --restore

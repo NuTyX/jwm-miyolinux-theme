@@ -1,0 +1,38 @@
+-- Conky Name: basic
+
+conky.config={
+alignment="bottom_middle",
+background="no",
+border_width="5",
+default_color="ffffff",
+double_buffer=true,
+draw_borders=false,
+draw_outline=false,
+draw_shades=false,
+gap_x=0,
+gap_y=60,
+maximum_width = 1000,
+minimum_size = 175,
+no_buffers=true,
+override_utf8_locale=true,
+short_units=true,
+own_window=true,
+own_window_title=conky,
+own_window_class=conky,
+own_window_hints="undecorated,below,sticky,skip_taskbar,skip_pager",
+own_window_transparent=true,
+own_window_type="override",
+text_buffer_size="1000",
+total_run_times=0,
+update_interval=1,
+uppercase=false,
+use_xft=true,
+xftalpha=1,
+}
+
+conky.text=[[
+${font DejaVu Math TeX Gyre:size=16}${alignc}${color #FE9C29}${time  %A }${color}${font}
+${voffset 15}${font DejaVu Math TeX Gyre:size=30}${alignc}${time %d %B %H:%M}${font}
+
+${font DejaVu Math TeX Gyre:size=12}${alignc} ${color #FE9C29}RAM:${color} ${exec free -h --si | awk 'NR==2{printf $3}'} / $memmax       ${color #FE9C29}CPU:${color} ${cpu cpu0}%       ${color #FE9C29}HD:${color} ${fs_used /} / ${fs_size /}${font}
+]]

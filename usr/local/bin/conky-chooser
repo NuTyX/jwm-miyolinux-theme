@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+yad --form --width=350 --borders=5 --title="Conky Chooser" --height=100 --window-icon="/usr/share/icons/Papirus/16x16/apps/conky.svg" --center --buttons-layout="center" --text-align=center --columns=3 --text="
+'Dossier' requires Picom.
+
+'Conversation' requires an internet connection.
+" \
+--field="  NuTyX!":fbtn "conky-nutyx" \
+--field="  Basic!":fbtn "conky-basic" \
+--field="  Dossier!":fbtn "conky-dossier" \
+--field="  Default!":fbtn "conky-default" \
+--field="  Elemental!":fbtn "conky-elemental" \
+--field="  Conversation!":fbtn "conky-conversation" \
+--button=" READ ME!/usr/share/icons/Papirus/16x16/actions/dialog-error.svg":"conky-about" \
+
+

@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+cp ~/.config/jwm/Adwaita/.jwmrc ~/.jwmrc;cp ~/.config/jwm/Adwaita/settings.ini ~/.config/gtk-3.0/settings.ini;jwm -restart;bash -c 'sleep 4';nitrogen --restore

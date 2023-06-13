@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+
+notify-send -t 20000 "NuTyX JWM:  Basic Key-bindings
+
+Modifiers
+
+[A] - Alt
+[C] - Ctrl
+[S] - Shift
+[W] - Windows key
+⬅⬆⬇➡ - Arrow keys
+
+JWM
+
+[A] + c - Close window
+[A] + F10 - Maximize window
+[A] + Tab - Next stacked window
+[A] + ⬇ - Minimize all windows
+[A] + ⬅ ➡ - Switch Desktops
+[C] + [A] + ⬆ - Reload JWM
+[C] + [A] + ⬇ - Restart JWM
+
+Applications
+
+[A] + Space - JWM Menu
+[A] + b - Browser (Firefox)
+[A] + f - File Manager (PCManFM)
+[A] + r - Run Command (dmenu)
+[A] + t - Terminal (XTerm)
+Print - Screenshot
+
+Root Applications
+
+[W] + f - File Manager (as root)
+[W] + l - LXAppearance (as root)
+[W] + p - Package Manager (flcards)
+
+Session
+
+[S] + [C] + l - Logout
+[S] + [C] + r - Reboot
+[S] + [C] + s - Shutdown
+[S] + [C] + x - Screenlock"

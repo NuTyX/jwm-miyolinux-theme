@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+yad --form --center --title="Touchpad Controls" --width 420 --window-icon="/usr/share/miyolinux/icons/miyolinux.png" --columns=2 --borders=10 --no-buttons --text-align=center --text="Temporary Touchpad Controls
+
+HINT:  Your touchpad must already be On and active before selecting Off While Typing.
+" \
+--field="Touchpad On":fbtn "synclient TouchpadOff=0" \
+--field="Touchpad Off":fbtn "synclient TouchpadOff=1" \
+--field="Off While Typing":fbtn "syndaemon -i 1.0 -d" \
+--field="Single Tap to Select":fbtn "synclient TapButton1=1" \
+--field="Two Finger Scrolling On":fbtn "synclient VertTwoFingerScroll=1" \
+--field="Two Finger Scrolling Off":fbtn "synclient VertTwoFingerScroll=0" \
+--field="Vertical Edge Scrolling On":fbtn "synclient VertEdgeScroll=1" \
+--field="Vertical Edge Scrolling Off":fbtn "synclient VertEdgeScroll=0" \

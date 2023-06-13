@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+notify-send -t 30000 --icon="/usr/share/icons/Papirus/24x24/status/dialog-error.svg" "WARNING!
+
+You are about to edit the .jwmrc file
+that is specific to this theme. The 
+theme's name is on line 4 of the .jwmrc
+file.
+
+When you have finished editing the file, 
+copy and paste the .jwmrc file from your 
+Home folder into its appropriate theme 
+folder located in...
+
+ ~/.config/jwm/
+
+...or your changes won't carry over
+if you change JWM Themes again.
+"

@@ -1,0 +1,50 @@
+-- Conky Name: conversation
+
+conky.config = {
+alignment="top_right",
+background="no",
+border_margin=5,
+border_width=5,
+default_color="ffffff",
+double_buffer=true,
+draw_borders=false,
+draw_outline=false,
+draw_shades=false,
+gap_x=20,
+gap_y=10,
+minimum_width = 360, minimum_height = 450,
+maximum_width = 360,
+no_buffers=true,
+override_utf8_locale=true,
+own_window=true,
+own_window_title=conky,
+own_window_hints="undecorated,below,sticky,skip_taskbar,skip_pager",
+own_window_transparent=true,
+own_window_type="override",
+own_window_color= '000000',
+text_buffer_size="1000",
+total_run_times=0,
+update_interval=1,
+uppercase=false,
+short_units=true,
+use_xft=true,
+xftalpha=1,
+font="Ubuntu:size=11",
+}
+
+conky.text=[[
+${voffset 10}${font Ubuntu:size=11}Hello\
+${color #FE9C29} ${execi 60 whoami}!${color}
+${voffset 10}Today is ${color #FE9C29}${time %A}, ${time  %d} ${time %B %Y}.${color} 
+${voffset 10}The current time is ${color #FE9C29}${time %H:%M}.${color}
+${voffset 10}Your RAM usage is ${color #FE9C29}${exec free -h --si | awk 'NR==2{printf $3}'}${color} out of ${memmax /}, and your
+CPU is currently at ${color #FE9C29}${cpu cpu0}%.${color}         
+${voffset 10}The root partition reports that you have used
+${color #FE9C29}${fs_used /}${color} out of a total of ${fs_size /}.
+${voffset 10}Also, you have been active on your system for
+a total of ${color #FE9C29}${uptime}.${color}
+${voffset 10}While you consider those numbers, here is 
+something else for you to ponder...${font}
+${voffset 10}${color #FE9C29}${font Ubuntu Condensed:italic:size=12}${execi 600 ~/.config/conky/conversation/res/quote-online}${font}${color}
+${voffset -7}Have a great day, and enjoy using ${color #FE9C29}${exec lsb_release -sd | sed 's/\"//g'}!${color}
+]]

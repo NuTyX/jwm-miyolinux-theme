@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+notify-send -t 40000 --icon="/usr/share/icons/Papirus/24x24/status/dialog-information.svg" "When changing JWM Themes, there
+will be some items that will not adapt
+to the change; such as, some items in 
+the system tray, the color of 
+notifications, and open applications. 
+
+A simple Log Out and Log In will fix 
+this.
+
+PLEASE NOTE: If you change anything
+within a pre-installed theme through
+Customize Look and Feel; such as, the
+icons, mouse cursor, font, etc., you 
+may want to consider copying the 
+'settings.ini' found in...
+
+~/.config/gtk-3.0/settings.ini
+
+...into the appropriately named
+folder (of the theme you are using) 
+found in...
+
+~/.config/jwm/
+
+...so that it will be available if
+you change themes in the future."

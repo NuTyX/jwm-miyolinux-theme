@@ -1,0 +1,39 @@
+-- Conky Name: elemental
+
+conky.config = {
+alignment="top_right",
+background="no",
+border_margin=5,
+border_width=5,
+default_color="ffffff",
+double_buffer=true,
+draw_borders=false,
+draw_outline=false,
+draw_shades=false,
+gap_x=20,
+gap_y=10,
+minimum_width = 355, minimum_height = 110,
+maximum_width = 355,
+no_buffers=true,
+override_utf8_locale=true,
+own_window=true,
+own_window_title=conky,
+own_window_hints="undecorated,below,sticky,skip_taskbar,skip_pager",
+own_window_transparent=true,
+own_window_type="override",
+own_window_color= '000000',
+text_buffer_size="1000",
+total_run_times=0,
+update_interval=1,
+uppercase=false,
+short_units=true,
+use_xft=true,
+xftalpha=1,
+font="Ubuntu:pixelsize=13",
+}
+
+conky.text=[[
+${voffset 8}${font Ubuntu:pixelsize=65}${time %H:%M}${font}${voffset -38}${offset 4}${color #FE9C29}${font Ubuntu:pixelsize=24}${time %d}${voffset -1}${offset 4}${color}${font Ubuntu:pixelsize=22}${time %A}${font}${voffset 18}${offset -3}${color #FE9C29}${font Ubuntu:pixelsize=22}${offset -108}${voffset 4}${time %B '%y}${color}${font}
+
+${font Ubuntu:pixelsize=14} ${color #FE9C29}RAM:${color} ${exec free -h --si | awk 'NR==2{printf $3}'} / $memmax         ${color #FE9C29}CPU:${color} ${cpu cpu0}%         ${color #FE9C29}DISK:${color} ${fs_used /} / ${fs_size /}
+]]

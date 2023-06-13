@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+killall conky;cp -r ~/.config/conky/dossier/.conkyrc ~/.conkyrc;conky

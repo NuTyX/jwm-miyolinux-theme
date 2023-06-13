@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+notify-send -t 30000 --icon="/usr/share/icons/Papirus/16x16/actions/dialog-error.svg" "If you edit a .conkyrc file, you will need to 
+copy it from your home folder, and paste it 
+into its folder located in...
+
+~/.config/conky/
+
+Otherwise, your changes won't be available 
+from the Conky Chooser in the future.
+
+The name of the conky is at the top of each
+.conkyrc file, and that is also the name of 
+its folder."
