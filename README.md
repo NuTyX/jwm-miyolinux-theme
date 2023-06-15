@@ -17,7 +17,8 @@ Step 3: Add the packages needed for your customization...
 	sudo cards install xdgmenumaker dmenu oxy-cursors deepin-gtk-theme      \
  	pavucontrol picom ttf-liberation yad lxde-appearance \
   	papirus-icon-theme pcmanfm leafpad volumeicon        \
-   	xfce4-notifyd conky nitrogen
+   	xfce4-notifyd conky nitrogen fonts-ubuntu \
+	alsa-utils lxde-randr gtk-engines murrine \
 
 
 
