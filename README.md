@@ -29,8 +29,10 @@ files/folders from your system into the corresponding folders.
 
 4.1 Modify "Desktop Preferences" desktop file in /mnt/hd/usr/share/applications/ so it won't show in the menu.
 
-	Open "Desktop Preferences" with a text editor, and add the following line at the bottom of the file...
-	NoDisplay=True
+	Open the /mnt/hd/usr/share/applications/pcmanfm-desktop-pref.desktop file with a text editor,
+  	and add the following line at the bottom of the file:
+   
+		NoDisplay=True
   
 4.2 Copy the following from your files/folders into /mnt/hd/ folders... :
 
