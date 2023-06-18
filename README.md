@@ -26,22 +26,15 @@ Step 4: Move files, scripts, etc. into designated folders...
 
 Open the file manager as root, go to /mnt/hd/, and copy following
 files/folders from your system into the corresponding folders.
-
-4.1 Modify "Desktop Preferences" desktop file in /mnt/hd/usr/share/applications/ so it won't show in the menu.
-
-	Open the /mnt/hd/usr/share/applications/pcmanfm-desktop-pref.desktop file with a text editor,
-  	and add the following line at the bottom of the file:
-   
-		NoDisplay=True
   
-4.2 Copy the following from your files/folders into /mnt/hd/ folders... :
+4.1 Copy the following from your files/folders into /mnt/hd/ folders... :
 
 	/root/.gtkrc-2.0
 	/usr/share/images
 	/etc/fonts/local.conf
 	/etc/.bashrc
  
- 4.3 Copy these files/folders from the HOME folder into /mnt/hd/etc/skel/ :
+ 4.2 Copy these files/folders from the HOME folder into /mnt/hd/etc/skel/ :
 
 	.conkyrc
 	.gtkrc-2.0
@@ -49,7 +42,7 @@ files/folders from your system into the corresponding folders.
 	.Xresources
 	.bashrc
 
-4.4 Copy these files/folders from ~/.config/ into /mnt/hd/etc/skel/.config/ :
+4.3 Copy these files/folders from ~/.config/ into /mnt/hd/etc/skel/.config/ :
 
 	conky 
 	glib-2.0
