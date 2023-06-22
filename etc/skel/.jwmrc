@@ -106,7 +106,7 @@ label="picom.conf">leafpad ~/.config/picom.conf</Program>
     	<!--STARTUP COMMANDS-->
 	<StartupCommand>/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1</StartupCommand> 
         <StartupCommand>nitrogen --restore</StartupCommand>
-   	<StartupCommand>picom</StartupCommand> 
+   	<StartupCommand>picom</StartupCommand>  
 	<StartupCommand>volumeicon</StartupCommand> 
 	<StartupCommand>nm-applet</StartupCommand>
 	<StartupCommand>xset s off -dpms</StartupCommand>
