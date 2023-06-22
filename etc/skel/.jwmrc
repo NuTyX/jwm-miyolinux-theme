@@ -109,6 +109,7 @@ label="picom.conf">leafpad ~/.config/picom.conf</Program>
    	<StartupCommand>picom</StartupCommand>  
 	<StartupCommand>volumeicon</StartupCommand> 
 	<StartupCommand>nm-applet</StartupCommand>
+	<StartupCommand>cbatticon</StartupCommand>
 	<StartupCommand>xset s off -dpms</StartupCommand>
 	<StartupCommand>xrdb -load .Xresources</StartupCommand>
 	<StartupCommand>/usr/lib/xfce4/notifyd/xfce4-notifyd</StartupCommand>
