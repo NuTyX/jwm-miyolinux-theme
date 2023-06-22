@@ -109,11 +109,12 @@ label="picom.conf">leafpad ~/.config/picom.conf</Program>
    	<StartupCommand>picom</StartupCommand>  
 	<StartupCommand>volumeicon</StartupCommand> 
 	<StartupCommand>nm-applet</StartupCommand>
+
 	<StartupCommand>xset s off -dpms</StartupCommand>
 	<StartupCommand>xrdb -load .Xresources</StartupCommand>
 	<StartupCommand>/usr/lib/xfce4/notifyd/xfce4-notifyd</StartupCommand>
         <StartupCommand>sleep 4&&conky</StartupCommand>
-
+	<StartupCommand>cbatticon</StartupCommand>
 	<!-- STARTUP COMMANDS FOR TOUCHPAD CONTROLS -->
     	<!--To disable the touchpad while typing, uncomment the next line.-->
     	<!--<StartupCommand>syndaemon -i 1.0 -d</StartupCommand>-->
