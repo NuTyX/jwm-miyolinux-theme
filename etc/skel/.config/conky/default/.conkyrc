@@ -39,7 +39,7 @@ ${voffset 8}${font Ubuntu:pixelsize=45}${time %H:%M}${font}${voffset -29}${offse
 System$alignr${exec lsb_release -sd | sed 's/\"//g'}
 Init${alignr}${exec init --version}Kernel$alignr$kernel
 Session:${alignr}${exec 'echo $DESKTOP_SESSION'}
-Packages: $alignr${exec cards list -F | wc -l}
+Packages: $alignr${exec pkginfo -n}
 Uptime$alignr$uptime
 Temperature${alignr}${acpitemp}C
 Processes${alignr}${execi 1000 ps aux | wc -l}
